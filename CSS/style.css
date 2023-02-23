@@ -1,0 +1,25 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Tilt+Prism&display=swap");
+
+body {
+  font-family: "Tilt Prism", cursive;
+  font-family: "Lobster", cursive;
+  line-height: 1.5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.dice {
+  width: 100px;
+  height: 100px;
+}
+.game {
+  background-color: rgb(255, 174, 160);
+  min-height: 100vh;
+}
