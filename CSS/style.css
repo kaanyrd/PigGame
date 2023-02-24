@@ -64,25 +64,7 @@ img {
 .navbar-icon:hover {
   transform: scale(1.2);
 }
-#navbar-icon-1 {
-  color: black;
-}
-#navbar-icon-1:hover {
-  color: #e1306c;
-}
-#navbar-icon-2 {
-  color: black;
-}
-#navbar-icon-2:hover {
-  color: #0072b1;
-}
 
-#navbar-icon-3 {
-  color: black;
-}
-#navbar-icon-3:hover {
-  color: #171515;
-}
 .close-btn {
   /* border: 3px solid black; */
   position: fixed;
@@ -233,6 +215,25 @@ img {
   color: red;
 }
 @media screen and (min-width: 678px) {
+  #navbar-icon-1 {
+    color: black;
+  }
+  #navbar-icon-1:hover {
+    color: #e1306c;
+  }
+  #navbar-icon-2 {
+    color: black;
+  }
+  #navbar-icon-2:hover {
+    color: #0072b1;
+  }
+
+  #navbar-icon-3 {
+    color: black;
+  }
+  #navbar-icon-3:hover {
+    color: #171515;
+  }
   .game-center {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -246,7 +247,9 @@ img {
   }
   .player {
     display: grid;
-    align-content: space-around;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
   }
   .controller-section > * {
     /* border: 3px solid black; */
