@@ -1,10 +1,16 @@
 /* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Tilt+Prism&display=swap");
 
+:root {
+  --transition-linear: "all .3s linear";
+  --transition-ease-in-out: "all .3s ease-in-out";
+}
+
 body {
   font-family: "Tilt Prism", cursive;
   font-family: "Lobster", cursive;
-  line-height: 1.5;
+  /* line-height: 1.5; */
+  letter-spacing: 2px;
 }
 * {
   margin: 0;
@@ -18,8 +24,82 @@ img {
 .dice {
   width: 100px;
   height: 100px;
+  margin: 0 auto;
 }
 .game {
-  background-color: rgb(255, 174, 160);
+  background: linear-gradient(rgba(255, 195, 0, 0.5), rgba(255, 195, 0, 1));
   min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.game-center {
+  /* border: 3px solid red; */
+  max-width: 1170px;
+  width: 90vw;
+  margin: 0 auto;
+  /* height: 100%; */
+}
+.game-title {
+  text-align: center;
+}
+.game-title-header {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.player {
+  padding: 1rem;
+  background: transparent;
+  text-align: center;
+}
+.controller-section {
+  text-align: center;
+}
+.btn {
+  /* padding: 0.5rem; */
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  margin: 0.2rem 0;
+  transition: var(--transition-linear);
+}
+.btn:active {
+  background-color: white;
+}
+
+.player-1-title,
+.player-2-title {
+  text-transform: capitalize;
+}
+.point-info-title {
+  text-transform: capitalize;
+}
+.player-info {
+  /* border: 3px solid red; */
+}
+.player-1,
+.player-2,
+.controller-section {
+  /* border: 3px solid black; */
+}
+
+@media screen and (max-width: 678px) {
+  .player {
+    padding: 0;
+  }
+  .game-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+  }
+  .btn {
+    padding: 0.4rem 1.2rem;
+    cursor: pointer;
+  }
+}
+
+.active-player {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.5);
 }

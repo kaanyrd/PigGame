@@ -16,12 +16,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- FIXME -->
+    <!-- ADD FAVICON -->
     <title>Pig Game</title>
   </head>
   <body>
     <section class="game">
+      <div class="game-title">
+        <h1 class="game-title-header">pig game</h1>
+      </div>
       <div class="game-center">
-        <article class="player-1">
+        <article class="player player-1 active-player">
           <div class="player-info">
             <h1 class="player-1-title">player 1</h1>
             <h1 class="player-1-score">10</h1>
@@ -31,9 +36,19 @@
             <h2 class="player-1-current">11</h2>
           </div>
         </article>
-        <article class="player-2">
+        <div class="controller-section">
+          <div class="controller-top-side">
+            <button class="btn newBtn">🆕 new game</button>
+            <img class="dice" src="/IMGs/dice-1.png" alt="dice" />
+          </div>
+          <div class="controller-bottom-side">
+            <button class="btn rollBtn">🎲 roll dice</button>
+            <button class="btn holdBtn">🧤 hold</button>
+          </div>
+        </div>
+        <article class="player player-2">
           <div class="player-info">
-            <h1 class="player-2-title">player 1</h1>
+            <h1 class="player-2-title">player 2</h1>
             <h1 class="player-2-score">20</h1>
           </div>
           <div class="point-info">
@@ -41,16 +56,6 @@
             <h2 class="player-2-current">21</h2>
           </div>
         </article>
-        <div class="controller-section">
-          <div class="controller-top-side">
-            <button class="btn newBtn">🆕 new game</button>
-            <img class="dice" src="/IMGs/dice-1.png" alt="dice" />
-          </div>
-          <div class="controller-bottom-side">
-            <button class="btn newBtn">🎲 roll dice</button>
-            <button class="btn newBtn">🧤 hold</button>
-          </div>
-        </div>
       </div>
     </section>
   </body>
