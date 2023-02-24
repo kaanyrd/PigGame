@@ -47,6 +47,20 @@ img {
   font-size: 3rem;
 }
 .player {
+  /* border: 3px solid black; */
+}
+.game-center {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  align-items: center;
+}
+.btn {
+  padding: 0.4rem 1.2rem;
+  cursor: pointer;
+}
+
+.player {
   padding: 1rem;
   background: transparent;
   text-align: center;
@@ -78,28 +92,47 @@ img {
   /* border: 3px solid red; */
 }
 .player-1,
-.player-2,
-.controller-section {
-  /* border: 3px solid black; */
+.player-2 {
+  border: 3px solid black;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.3);
 }
-
-@media screen and (max-width: 678px) {
-  .player {
-    padding: 0;
-  }
+.player-1-score,
+.player-2-score {
+  color: red;
+}
+@media screen and (min-width: 678px) {
   .game-center {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto 1fr;
-    align-items: center;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr;
+    border: 3px solid black;
   }
-  .btn {
-    padding: 0.4rem 1.2rem;
-    cursor: pointer;
+  .game-center > * {
+    border: 3px solid red;
+    height: 80%;
+  }
+  .player {
+    display: grid;
+    align-content: space-around;
+  }
+  .controller-section > * {
+    border: 3px solid black;
+  }
+  .player-1-title,
+  .player-2-title {
+    font-size: 3rem;
+  }
+  .player-1-score,
+  .player-2-score {
+    font-size: 3rem;
+    margin-top: 1.5rem;
   }
 }
-
 .active-player {
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
+  /* border: 3px solid black; */
+}
+.player > * {
+  border: 3px solid black;
 }
