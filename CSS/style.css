@@ -56,7 +56,9 @@ img {
   align-items: center;
 }
 .btn {
-  padding: 0.4rem 1.2rem;
+  width: 10rem;
+  height: 2rem;
+  /* padding: 0.4rem 1.2rem; */
   cursor: pointer;
 }
 
@@ -101,6 +103,11 @@ img {
 .player-2-score {
   color: red;
 }
+.player-1-current,
+.player-2-current {
+  font-size: 1.8rem;
+  color: red;
+}
 @media screen and (min-width: 678px) {
   .game-center {
     display: grid;
@@ -127,6 +134,20 @@ img {
   .player-2-score {
     font-size: 3rem;
     margin-top: 1.5rem;
+  }
+  .point-info-title {
+    font-size: 2rem;
+  }
+  .controller-section {
+    display: grid;
+    align-content: space-around;
+  }
+  .controller-section > * {
+    border: 3px solid black;
+  }
+  .controller-bottom-side {
+    display: flex;
+    flex-direction: column;
   }
 }
 .active-player {
