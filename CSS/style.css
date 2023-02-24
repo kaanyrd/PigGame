@@ -87,7 +87,7 @@ img {
   /* border: 3px solid black; */
   position: fixed;
   top: 2%;
-  right: 2%;
+  right: 5%;
   z-index: 4;
   font-size: 2rem;
   cursor: pointer;
