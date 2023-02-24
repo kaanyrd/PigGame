@@ -180,10 +180,10 @@ img {
   /* border: 5px solid red; */
   display: grid;
   justify-content: center;
-  align-items: center;
+  /* align-items: center;
   align-content: flex-start;
   height: 148px;
-  width: 100%;
+  width: 100%; */
 }
 
 .new-btn,
