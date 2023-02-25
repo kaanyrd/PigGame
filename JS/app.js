@@ -76,7 +76,7 @@ holdBtn.addEventListener("click", () => {
       scores[activePlayer];
   }
   // document.querySelector(`.player-${activePlayer}-current`).textContent = 0;
-  if (scores[activePlayer] >= 5) {
+  if (scores[activePlayer] >= 30) {
     playing = false;
     document.querySelector(
       `.player-${activePlayer}-title`
