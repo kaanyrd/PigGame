@@ -53,6 +53,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  -moz-column-gap: 2rem;
   column-gap: 2rem;
 }
 .navbar-icon {
@@ -259,6 +260,7 @@ img {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: 1fr;
+    -moz-column-gap: 1rem;
     column-gap: 1rem;
     /* border: 3px solid black; */
   }
@@ -361,6 +363,7 @@ img {
   }
   .icons {
     display: flex;
+    -moz-column-gap: 1rem;
     column-gap: 1rem;
     margin-right: 0.5rem;
     transition: all 0.5s ease-in-out;
@@ -400,8 +403,8 @@ ul {
   display: none;
 }
 .winner {
-  background-color: rgb(1, 200, 255);
+  background-color: rgb(118, 255, 130);
 }
 .loser {
-  background-color: rgb(255, 164, 164);
+  background-color: rgb(253, 173, 173);
 }

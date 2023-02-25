@@ -48,6 +48,10 @@ let init = () => {
   document.querySelector(`.player-1`).classList.remove("winner");
   document.querySelector(`.player-1`).classList.remove("active-player");
   document.querySelector(`.player-0`).classList.add("active-player");
+  document.querySelector(`.player-0`).classList.remove("loser");
+  document.querySelector(`.player-1`).classList.remove("loser");
+  document.querySelector(`.player-0-title`).textContent = `Player 1`;
+  document.querySelector(`.player-1-title`).textContent = `Player 2`;
 };
 init();
 rollBtn.addEventListener("click", () => {
@@ -72,12 +76,18 @@ holdBtn.addEventListener("click", () => {
       scores[activePlayer];
   }
   // document.querySelector(`.player-${activePlayer}-current`).textContent = 0;
-  if (scores[activePlayer] >= 20) {
+  if (scores[activePlayer] >= 5) {
     playing = false;
+    document.querySelector(
+      `.player-${activePlayer}-title`
+    ).textContent = `Player ${activePlayer + 1} (Win!)`;
     document.querySelector(`.player-${activePlayer}`).classList.add("winner");
     document
-      .querySelector(`.player-${activePlayer}`)
-      .classList.remove("active-player");
+      .querySelector(`.player-${activePlayer === 0 ? 1 : 0}`)
+      .classList.add("loser");
+    // document
+    //   .querySelector(`.player-${activePlayer}`)
+    //   .classList.add("active-player");
   } else {
     switchPlayer();
   }
