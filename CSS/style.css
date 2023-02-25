@@ -92,6 +92,7 @@ img {
   margin: 0 auto;
   border: 5px solid black;
   border-radius: 5px;
+  transition: all 0.1s ease-in-out;
 }
 .game {
   background: linear-gradient(rgba(255, 195, 0, 0.5), rgba(255, 195, 0, 1));
@@ -209,8 +210,8 @@ img {
   background-color: white;
 }
 
-.player-1-title,
-.player-2-title {
+.player-0-title,
+.player-1-title {
   text-transform: capitalize;
 }
 .point-info-title {
@@ -219,18 +220,18 @@ img {
 .player-info {
   /* border: 3px solid red; */
 }
-.player-1,
-.player-2 {
+.player-0,
+.player-1 {
   /* border: 3px solid black; */
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.4);
 }
-.player-1-score,
-.player-2-score {
+.player-0-score,
+.player-1-score {
   color: red;
 }
-.player-1-current,
-.player-2-current {
+.player-0-current,
+.player-1-current {
   font-size: 1.8rem;
   color: red;
 }
@@ -274,13 +275,13 @@ img {
   .controller-section > * {
     /* border: 3px solid black; */
   }
-  .player-1-title,
-  .player-2-title {
+  .player-0-title,
+  .player-1-title {
     text-transform: uppercase;
     font-size: 3rem;
   }
-  .player-1-score,
-  .player-2-score {
+  .player-0-score,
+  .player-1-score {
     font-size: 3rem;
     margin-top: 1.5rem;
   }
@@ -325,8 +326,8 @@ img {
   .navbar {
     display: none;
   }
-  .player-1-title,
-  .player-2-title {
+  .player-0-title,
+  .player-1-title {
     font-size: 3.5rem;
   }
   .game-title {
@@ -335,8 +336,8 @@ img {
   .game-title-header {
     font-size: 4rem;
   }
-  .player-1-current,
-  .player-2-current {
+  .player-0-current,
+  .player-1-current {
     font-size: 2.25rem;
   }
   .developer-info {
@@ -397,4 +398,10 @@ ul {
 /* END OF GAME */
 .hidden {
   display: none;
+}
+.winner {
+  background-color: rgb(1, 200, 255);
+}
+.loser {
+  background-color: rgb(255, 164, 164);
 }
