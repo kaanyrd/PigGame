@@ -389,7 +389,7 @@ img {
   }
 }
 .active-player {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   /* border: 3px solid black; */
 }
 .player > * {
@@ -406,5 +406,5 @@ ul {
   background-color: rgb(118, 255, 130);
 }
 .loser {
-  background-color: rgb(253, 173, 173);
+  background-color: rgb(254, 197, 197);
 }
