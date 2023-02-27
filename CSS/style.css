@@ -93,7 +93,6 @@ img {
   margin: 0 auto;
   border: 5px solid black;
   border-radius: 5px;
-  transition: all 0.1s ease-in-out;
 }
 .game {
   background: linear-gradient(rgba(255, 195, 0, 0.5), rgba(255, 195, 0, 1));
@@ -327,6 +326,9 @@ img {
 @media screen and (min-width: 992px) {
   .navbar {
     display: none;
+  }
+  .dice {
+    transition: all 0.1s ease-in-out;
   }
   .player-0-title,
   .player-1-title {
